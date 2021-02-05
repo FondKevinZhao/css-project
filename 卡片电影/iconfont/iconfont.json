@@ -1,0 +1,37 @@
+{
+  "id": "2080640",
+  "name": "movie card",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "83559",
+      "name": "地点",
+      "font_class": "didian",
+      "unicode": "e684",
+      "unicode_decimal": 59012
+    },
+    {
+      "icon_id": "9229249",
+      "name": "facebook",
+      "font_class": "facebook",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "6267687",
+      "name": "Star large",
+      "font_class": "Starlarge-copy",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "10805169",
+      "name": "Star large",
+      "font_class": "Starlarge",
+      "unicode": "e68b",
+      "unicode_decimal": 59019
+    }
+  ]
+}
