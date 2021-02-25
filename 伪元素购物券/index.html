@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>购物券</title>
+    <title>shipping coupon</title>
     <style>
-        body{
+        body {
             padding: 200px;
         }
 
-        div:nth-of-type(1){
+        div:nth-of-type(1) {
             width: 300px;
             height: 200px;
             background-color: red;
             float: left;
         }
 
-        div:nth-of-type(2){
+        div:nth-of-type(2) {
             width: 100px;
             height: 200px;
             background-color: blue;
@@ -24,23 +25,23 @@
             position: relative;
         }
 
-        div:nth-of-type(2)::before{
+        div:nth-of-type(2)::before {
             /* 必须添加content属性，否则后期不可见 */
-            content:"";
+            content: "";
             /* 默认是行级元素，如果想设置宽高，就必须转换为块级元素 */
             position: absolute;
             width: 20px;
             height: 20px;
             background-color: #fff;
             border-radius: 10px;
-            left: -10px; 
+            left: -10px;
             top: -10px;
             /* left 和 top一定要加px，0就不需要。 */
         }
 
-        div:nth-of-type(2)::after{
+        div:nth-of-type(2)::after {
             /* 必须添加content属性，否则后期不可见 */
-            content:"";
+            content: "";
             /* 默认是行级元素，如果想设置宽高，就必须转换为块级元素 */
             position: absolute;
             width: 20px;
@@ -50,11 +51,12 @@
             left: -10px;
             bottom: -10px;
         }
-
     </style>
 </head>
+
 <body>
     <div></div>
     <div></div>
 </body>
+
 </html>
