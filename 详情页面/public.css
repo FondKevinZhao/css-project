@@ -1,0 +1,36 @@
+.w {
+  width: 1200px;
+  margin: 0 auto;
+  color: pink;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: lightgreen;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+button {
+  background-color: #ea4a36;
+  color: white;
+}
+button:hover {
+  cursor: pointer;
+}
+.clearFix::after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  clear: both;
+}

@@ -1,0 +1,218 @@
+/* 通用样式 */
+.w {
+  width: 1200px;
+  margin: 0 auto;
+  /* background-color: pink; */
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: lightgreen;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+button {
+  background-color: #ea4a36;
+  color: white;
+}
+button:hover {
+  cursor: pointer;
+}
+clearFix::after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  clear: both;
+}
+/* 通用样式结束 */
+
+/*nav 开始*/
+.nav {
+  width: auto;
+  height: 36px;
+  background-color: #eaeaea;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.nav > .w {
+  margin: 0 auto;
+}
+
+.subnav {
+  height: 36px;
+  line-height: 36px;
+}
+
+ul > li {
+  /* height: 16px; */
+  float: left;
+  color: #333;
+}
+
+ul li a {
+  color: #666;
+}
+
+.second span {
+  color: #333;
+  font-size: 14px;
+}
+.third {
+  padding-left: 3px;
+}
+
+.nav-right li {
+  /* border: 1px solid red; */
+  margin-top: 12px;
+  height: 16px;
+  line-height: 16px;
+  vertical-align: middle;
+  padding: 0 7px;
+  border-left: 1px solid #333;
+}
+.nav-right li.nav-right-first {
+  border-left: none;
+}
+/*nav 结束*/
+/*logo 开始*/
+.section {
+  height: 100px;
+  /* background-color: pink; */
+  position: relative;
+}
+
+.logo {
+  width: 175px;
+  height: 56px;
+  /* background-color: red; */
+  float: left;
+  position: absolute;
+  top: 22px;
+  left: 66px;
+}
+
+.search {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  box-sizing: border-box;
+}
+.search input {
+  width: 494px;
+  height: 30px;
+  outline: none;
+  padding-left: 5px;
+  border: 2px solid #ea4a36;
+  border-right: none;
+}
+
+.search button {
+  width: 90px;
+  height: 34px;
+  outline: 0;
+  border:2px none #ea4a36;
+  padding-bottom: 2px; 
+}
+/*logo 结束*/
+
+/* goods开始 */
+.goods {
+  width: auto;
+  height: 60px;
+  border-bottom: 4px solid #ea4a36;
+}
+
+.goods .all-goods {
+  width: 262px;
+  height: 60px;
+  background-color: #e1251b;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+}
+
+.all-center {
+  height: 60px;
+  line-height: 60px;
+  /* background-color: orange; */
+}
+
+.goods .all-goods a {
+  font-weight: bold;
+  color: white;
+}
+
+.goods .all-goods a:hover {
+  text-decoration: none;
+  color: lightgreen;
+}
+
+.goods ul li {
+  float: left;
+  
+}
+
+.goods  ul li a {
+  color: #333;
+  padding: 0 30px;
+  font-size: 20px;
+}
+
+.goods  ul li a:hover {
+  color: lightgreen;
+}
+/* goods 结束 */
+
+/*phone-title 开始*/
+.phone-title {
+  /* background-color: pink; */
+  height: 60px;
+  line-height: 60px;
+}
+
+.phone-title a {
+  color: #333;
+}
+
+.phone-title a:hover {
+  color: lightgreen;
+}
+/*phone-title 结束*/
+
+/* details开始 */
+.details-left {
+  width: 500px;
+  height: 582px;
+  background-color: pink;
+}
+
+.details-right {
+  width: 700px;
+  height: 582px;
+  background-color: yellow;
+}
+
+.square-frame {
+  width: 498px;
+  height: 500px;
+  border: 1px solid black;
+}
+/* details结束 */
