@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seamless rolling</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        div {
+            width: 911px;
+            height: 86px;
+            margin: 100px auto;
+            /* background-color: #ddd; */
+        }
+
+        div >ul{
+            list-style: none;
+            /*1.设置动画的名称*/
+            animation-name: move;
+            /* 2.设置动画的耗时 */
+            animation-duration: 7s;
+            /* 3. 设置无限循环 */
+            animation-iteration-count: infinite;
+            /* 4. 设置时间函数 */
+            animation-timing-function: linear;
+        }
+
+        div > ul > li {
+            width: 126px;
+            float: left;
+        }
+
+        div > ul > li > img {
+            width: 100%;
+        }
+        img {
+            width: 126px;
+            height: 86px;
+        }
+
+        /* 创建动画 */
+        @keyframes move {
+            from{
+                transform: translateX(0);
+            }
+
+            to{
+                transform: translateX(-911px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+           <img src="./img/1.jpg" alt="">
+           <img src="./img/2.jpg" alt="">
+           <img src="./img/3.jpg" alt="">
+           <img src="./img/4.jpg" alt="">
+           <img src="./img/5.jpg" alt="">
+           <img src="./img/6.jpg" alt="">
+           <img src="./img/5.jpg" alt="">
+        </ul>
+    </div>
+</body>
+</html>
