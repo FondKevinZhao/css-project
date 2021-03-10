@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body {
+            perspective: 200px;
+        }
+
+        .box {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 100px auto; /*居中*/
+            transition: all 2s;
+            /*这步很关键，不然没有效果，给父级添加*/
+            transform-style: preserve-3d; 
+        }
+
+        .box:hover{
+            transform: rotateY(180deg);
+        }
+
+        .front,
+        .back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%; 
+            font-size: 30px;
+            color:#fff;
+            text-align: center;
+            line-height: 300px;
+        }
+        .front {
+            background-color: pink;
+            z-index: 1;
+        }
+
+        .back {
+            background-color: purple;
+            /* 像手机一样 背靠背来进行旋转 */
+            transform: rotateY(180deg); 
+        }
+    </style>
+</head>
+<body>
+    <!-- box 父盒子里面包含前后两个子盒子 -->
+    <!-- box 是翻转的盒子 front是前面盒子 back是后面盒子 -->
+    <div class="box">
+        <div class="front">我在这里</div>
+        <div class="back">等你</div>
+    </div>
+</body>
+</html>
